@@ -18,6 +18,22 @@
     margin-bottom: 30px;
 
 }
+  @media (max-width: 1199px) {
+ .hero-title{
+    width: 360px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.62;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #fff; }
+            }
+                
+
+
 .title-list {
     font-size: 14px;
     line-height: 1.71;
@@ -58,6 +74,11 @@
     margin-top: 0px;
     text-align: left;
     color: var(--title-text-color);
+    @media screen  and( max-width:480px) {
+        text-align: center;
+        
+    }
+
 }
 .work-title {
     font-weight: 700px;
@@ -90,6 +111,12 @@
     letter-spacing: 0.03em;
     margin-bottom: 50px;
     margin-top: 0%;
+   
+    @media (max-width:1199px) {
+            font-size: 28px;
+            
+           line-height: 1.179;
+        }
 }
 .staff-title-list {
     display: flex;
@@ -99,7 +126,25 @@
     margin-top: 0;
     margin-bottom: 0;
 
+}
 
+@media screen and (max-width: 1199px) {
+    .staff-title-list{
+             display: flex;
+             justify-content: center;
+             flex-wrap: wrap;
+
+           
+
+    }
+
+    
+}
+@media screen and(max-width: 768px) {
+    .staff-title-list li{
+        margin-bottom: 30px;
+    }
+    
 }
 
 .staff-title-list:last-child {
@@ -138,6 +183,11 @@
     letter-spacing: 0.03em;
     color: #212121;
     margin: 0 auto 50px;
+   
+    @media (max-width: 1199px){
+            font-size: 28px;
+    }
+
 }
 .footer-sociales-title {
     font-style: normal;
@@ -148,4 +198,9 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     color: #FFFFFF;
+   
+    @media screen and (max-width: 480px) {
+     margin-top: 60px;
+        
+    }
 }

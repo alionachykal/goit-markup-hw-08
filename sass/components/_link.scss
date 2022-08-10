@@ -1,3 +1,16 @@
+/* Класс для обнуления базовых свойств у списков (ul) */
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Класс для обнуления базовых свойств у ссылок */
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
 .link1 {
     color: #2196F3;
     text-decoration: none;
@@ -208,7 +221,17 @@
 .mail.link {
     display: flex;
     align-items: center;
-}
+   @media screen and (max-width: 1199px) {
+       font-weight: 500;
+           display: inline-flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            font-size: 12px;
+            line-height: 1.167;
+   }
+    }
+
 
 
 .mail2 {
@@ -235,8 +258,24 @@
     align-items: center;
     position: relative;
     transition: color 250ms var(--timing-function);
-}
 
+@media screen and (max-width: 1199px) {
+        font-weight: 500;
+        display: inline-flex;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-size: 12px;
+        line-height: 1.167;
+        padding-bottom: 0;
+        padding-top: 0;;
+    }
+        }
+
+    
+        
+   
 a.number:hover .icon-phone {
     fill: var(--accent-color);
 }
@@ -248,6 +287,9 @@ a.number:focus {
 .footer-nav {
     display: block;
     padding-left: 0;
+    // @media screen and(max-width:480px) {
+     
+    // }
 
 }
 
@@ -267,6 +309,7 @@ a.number:focus {
     font-weight: 400;
     text-decoration: none;
     transition: color 250ms var(--timing-function);
+   
 
 }
 
@@ -320,9 +363,16 @@ a.number:focus {
     border: 1px solid #afb1b8;
     border-radius: 4px;
     width: 170px;
-    height: 92px;
-    transition: border-color 250ms var(--timing-function);
+   height: 92px;
+   transition: border-color 250ms var(--timing-function);
+    
+    @media (max-width:768px) {
+    width: 100%;}
 }
+    
+    
+
+
 
 .clients-list__link:hover .clients-icon {
     fill: var(--primary-bcg-accent-color);
@@ -383,4 +433,14 @@ a.number:focus {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
+}
+
+.nav-list-mobile {
+    display: block;
+    list-style: none;
+    margin: 50px 0 302px 25px;
+    padding: 0;
+}
+.nav-list-mobile__item {
+    margin-bottom: 32px;
 }

@@ -15,16 +15,48 @@
     text-align: center;
     padding-left: 0;
     column-gap: 30px;
+    width: 100%;
 
 }
+    @media screen  and (max-width:767px)
+    { .features-list{
+        display:block;
+        }
+    }
+    //   @media (max-width: 768px) 
+    //      {.features-list{
+    //         display:flex;
+    //         flex-wrap: wrap;
+    //      }
+         
+    //     }
+        @media (max-width:1199px) {
+            .features-list{
+                display: flex;
+                    flex-wrap: wrap;
+                    // margin-right: -15px;
+                    // margin-left: -15px;
+                    margin-bottom: -30px;
+                }
+            }
+            
+        
+           
+ 
+       
+
+    
 
 .features-list:last-child {
-    margin-right: 0;
-}
+    margin-right: 0;}
+    
 
 .feature-list__item {
     display: block;
-    width: 270px;
+    width: 100%;
+    @media (min-width: 768px){
+     width: 47%;
+        }
 
 }
 

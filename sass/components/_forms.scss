@@ -12,6 +12,10 @@
     margin-left: auto;
     margin-right: auto;
     padding: 40px;
+    // @media screen and (max-width: 480px){
+    //    width: 100%;
+    // }
+
 
 }
 
@@ -142,7 +146,11 @@
 
 
 
-
+// @media screen and (max-width: 1199px){
+//     .subscribe__form{
+//         margin-bottom: 60px;
+//     }
+// }
 
 
 /* стилизация form для footer */
@@ -159,11 +167,26 @@
     letter-spacing: 0.03em;
     color: #FFFFFF;
     margin-bottom: 20px;
-}
+    width: 100%;
+    // @media screen and (max-width: 1200px){
+    //     display: block;
+    //     margin-top: 0;
+    // }
+    
+    // @media screen and(min-width:480px) {
+    // // display: block;
+    //     max-width: 100%;
+    //     margin-top: 20px;
+    //     align-items: center;
+    // }
+        
+    }
+
 
 .subscribe-input {
 
-    min-width: 358px;
+    max-width: 358px;
+    width: 100%;
     padding: 15px 16px;
     font-size: 16px;
     line-height: 1.25;
@@ -172,6 +195,15 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    margin-bottom: 20px;
+//     @media screen and (min-width:480px) {
+//         //    display: flex;
+//         //    align-items: center;
+//            margin-bottom: 20px;
+//         //    width: 100%;
+    
+//         }
+// }
 }
 
 

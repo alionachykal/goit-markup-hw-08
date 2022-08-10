@@ -6,6 +6,12 @@
 .section.work {
     padding-top: 0;
 }
+.section.work {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+
 
 
 

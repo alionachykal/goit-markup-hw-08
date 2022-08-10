@@ -16,10 +16,17 @@
   <body>
 
         <header class="page-header">
-          <div class="container">
-
-            <nav class="header-nav">
+           <div class="container">
+        <nav class="header-nav">
               <a href="./index.html" class="logo-page-header" lang="en"><span class="web-logo">Web</span>Studio</a>
+            
+                <button type="button" class=" menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                  <svg class="page-header__icon" width="40px" height="40px " aria-label="Переключатель мобильного меню">
+                    <use href="./images/icons/sprite4.svg#icon-menu_40px"></use>
+                  </svg>
+                </button>
+            
+             
             
               <ul class="site-nav">
                 <li class="site-nav__item"><a href="" class="link1 active">Студия</a></li>
@@ -43,6 +50,60 @@
               </svg>+38 096 111 11 11</a></li>
             </ul> 
           </div>
+     
+          <!-- <button class="menu-toggle  js-open-menu" aria-expanded="false" type="button" aria-controls="mobile-menu">
+            <svg class="icon-menu" width="24px" height="16px">
+              <use href="./images/icons/sprite4.svg#icon-menu_40px"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg  aria-hidden="true" width="18.5px" height="18.5px">
+              <use href="./images/icons/closeback.svg#"></use>  
+            </svg>
+            </button>
+            <nav class="mobile-menu__nav">
+              <ul class="list mobile-menu__nav-list">
+                <li class="mobile-menu__nav-item">
+                  <a href="./index.html" class="link mobile-menu__nav-link mobile-menu__current">Студія</a>
+                </li>
+                <li class="mobile-menu__nav-item">
+                  <a href="./portfolio.html" class="link mobile-menu__nav-link">Портфоліо</a>
+                </li>
+                <li class="mobile-menu__nav-item">
+                  <a href="#contact" class="link mobile-menu__nav-link">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="list mobile-menu__contacts">
+              <li class="mobile-menu__contacts-item">
+                <a class="link mobile-menu__contacts-link" href="tel:+380961111111">
+                  <span class="mobile-menu__contacts-link--color">+38 096 111 11 11</span>
+                </a>
+              </li>
+              <li class="mobile-menu__contacts-item">
+                <a class="link mobile-menu__contacts-link" href="mailto:info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            
+            <ul class="list mobile-menu__social-list">
+              <li class="mobile-menu__social-item">
+                <a class="link mobile-menu__social-link" href="#">Instagram</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a class="link mobile-menu__social-link" href="#">Twitter</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a class="link mobile-menu__social-link" href="#">Facebook</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a class="link mobile-menu__social-link" href="#">LinkedIn</a>
+              </li>
+            </ul>
+            </div> -->
+
       </header>
 
       <main>
@@ -373,7 +434,7 @@
             </ul>
           </div>
           <div class="subscribe">
-            <form>
+            <form class="subscribe__form">
               <label class="subscribe-lable" for="email"> Подпишитесь на рассылку</label>
               <input type="email" name="email" id="email" placeholder="E-mail" class="subscribe-input">
               <button type="submit" class="subscribe-button">Подписаться
@@ -450,7 +511,59 @@
 
   </div>
 </div>
-<script src="./js/modal.js"></script>
+
+
+<div class="menu-container js-menu-close" id="mobile-menu" >
+  <button type="button" class="menu-toggle"  js-close-menu >
+    <svg class="page-header__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+      <use class="icon-close" href="./images/symbol-defs.svg#close-24"></use>
+    </svg>
+  </button>
+  <ul class="mobile-menu">
+    <li class="nav-list-mobile__item">
+      <a href="./index.html" class="nav-list-mobile__link link current">Студия</a>
+    </li>
+    <li class="nav-list-mobile__item">
+      <a href="./portfolio.html" class="nav-list-mobile__link link">Портфолио</a>
+    </li>
+    <li class="nav-list-mobile__item">
+      <a href="#" class="nav-list-mobile__link link">Контакты</a>
+    </li>
+  </ul>
+  <div class="header-contacts-mobile">
+    <a href="tel:+380961111111" class="header-contacts__link">
+      <svg class="header-contacts__icon" width="10" height="16" aria-hidden="true">
+        <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+      </svg>
+      +38 096 111 11 11</a>
+    <a href="mailto:info@devstudio.com" class="header-contacts__link">
+      <svg class="header-contacts__icon" width="16" height="12" aria-hidden="true">
+        <use href="./images/symbol-defs.svg#icon-envelope"></use>
+      </svg>info@devstudio.com</a>
+  </div>
+  <div class="page-header__social">
+    <a href="/" class="page-header__link">Instagram</a>
+    <svg class="line" height="22" width="1" aria-hidden="true">
+      <use href="./images/symbol-defs.svg#line"></use>
+    </svg>
+    <a href="/" class="page-header__link">Twitter</a>
+    <svg class="line" height="22" width="1" aria-hidden="true">
+      <use href="./images/symbol-defs.svg#line"></use>
+    </svg>
+    <a href="/" class="page-header__link">Facebook</a>
+    <svg class="line" height="22" width="1" aria-hidden="true">
+      <use href="./images/symbol-defs.svg#line"></use>
+    </svg>
+    <a href="/" class="page-header__link">LinkedIn</a>
+
+  </div>
+</div>
+
+<script src="./js/mobile-menu.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"></script>
+<script defer src="js/mobile-menu.js"></script>
 
   
       </body>
