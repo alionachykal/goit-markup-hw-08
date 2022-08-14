@@ -74,7 +74,7 @@
     margin-top: 0px;
     text-align: left;
     color: var(--title-text-color);
-    @media screen  and( max-width:480px) {
+    @media screen  and( max-width: 768px) {
         text-align: center;
         
     }
@@ -201,6 +201,13 @@
    
     @media screen and (max-width: 480px) {
      margin-top: 60px;
+     text-align: center;
         
     }
+}
+ @media screen and (max-width: 1199px){
+    .footer-sociales-title {
+        text-align: center;
+
+ }
 }

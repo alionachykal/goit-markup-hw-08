@@ -7,6 +7,7 @@
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
     transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
+    overflow-y: scroll;
 
 }
 
@@ -20,13 +21,25 @@
     transform: translate(-50%, -50%) scale(0.9);
 }
 
+
+@media screen and (min-width: 1200px) {
+     .modal {
+    position: absolute;
+        width: 528px;
+        height: 581px;
+
+
+     }
+  
+}
+
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
     background-color: var(--primary-bcg-color);
-    width: 528px;
-    height: 581px;
+    width: 450px;
+     height: 609px;
     transform: translate(-50%, -50%);
     transition: 250ms var(--timing-function);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
