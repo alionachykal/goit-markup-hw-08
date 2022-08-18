@@ -16,6 +16,7 @@
             flex-wrap: wrap;
             width: 100%;
             margin-bottom: 40px;
+      
 
     }
     
@@ -69,7 +70,10 @@
 .button-port__item {
     display: flex;
     margin-right: 9px;
-}
+    margin-right: 8px;
+        margin-bottom: 15px;
+    }
+
 
 .button-port__item:last-child {
     margin-right: 0;

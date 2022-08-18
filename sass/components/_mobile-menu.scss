@@ -1,4 +1,4 @@
-.menu-container.js-menu-container.is-open{
+.menu-container.js-menu-container{
     @media screen and (min-width: 769px) {
         display: none;
        
@@ -6,7 +6,7 @@
     }
 }
 
-.menu-container.js-menu-container.is-open {
+.menu-container.js-menu-container {
 @media screen and (max-width: 767px) {
         display: block;
         margin: 0 auto;
@@ -21,6 +21,7 @@
         z-index: 5;
         background-color: #fff;
         box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 }
@@ -36,19 +37,41 @@
 
     }
 }
-
-.menu-button .icon-cross {
-    display: none;
+.menu-button-close{
+position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+     background-color: transparent;
 }
-
-.menu-button.js-open-menu .icon-cross {
+.menu-button-close.js-close-menu{
     display: block;
+
+    
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+        .mobile-icon{
+            display: inline-block;
+            fill: currentColor;
+        }
+.page-header__icon{
+    display: inline-block;
+        fill: currentColor;
+
 }
 
-.menu-button.js-open-menu .icon-menu {
-    display: none;
+// .menu-button .icon-cross {
+//     display: none;
+// }
 
-}
+// .menu-button.js-open-menu .icon-cross {
+//     display: block;
+// }
+
+// .menu-button.js-open-menu .icon-menu {
+//     display: none;
+
+// }
 @media screen and (min-width: 768px) {
     .header__contacts {
         display: flex;
