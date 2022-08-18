@@ -19,30 +19,12 @@
            <div class="container">
         <nav class="header-nav">
               <a href="./index.html" class="logo-page-header" lang="en"><span class="web-logo">Web</span>Studio</a>
-            
-                <button type="button" class="menu-button js-open-menu" 
-                aria-expanded="false"
-                aria-controls="menu-container">
-                  <svg class="page-header__icon" width="40" height="40"
-                   aria-label="Переключатель мобильного меню">
-                    <use class="icon-menu" href="./images/icons/sprite4.svg#icon-menu_40px"></use>
-                    <use class="icon-cross" href="./images/icons/closeback.svg#icon-closeblack"></use>
-                    </svg>
-                  </svg>
-                </button>
-                <div class="menu-container js-menu-container" id="menu-container">
-                  контент меню
-
-                </div>
-
-            
               <ul class="site-nav">
                 <li class="site-nav__item"><a href="" class="link1 active">Студия</a></li>
                 <li class="site-nav__item"><a href="./portfolio.html" class="resume">Портфолио</a></li>
-                <li class="site-nav__item"><a href=""class="contacts">Контакти</a></li>
+                <li class="site-nav__item"><a href="" class="contacts">Контакти</a></li>
               </ul>
-            </nav>
-       
+              </nav>
               <ul class="site-nav2">
                 <li class="site-nav__item2 ">
                   <a href="mailto:info@devstudio.com" class="mail link">
@@ -58,10 +40,85 @@
                     </svg>+38 096 111 11 11</a>
                 </li>
               </ul>
+             
+            
+                <button type="button" class="menu-button js-open-menu" 
+                aria-expanded="false"
+                aria-controls="menu-container">
+                  <svg class="page-header__icon" width="40" height="40"
+                   aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu" href="./images/icons/closeback.svg#icon-closeblack"></use>
+                    <use class="icon-cross" href="./images/icons/sprite4.svg#icon-menu_40px"></use>
+                    </svg>
+                  </svg>
+                </button> 
 
+                <div class="menu-container js-menu-container is-open" id="menu-container">
+
+            <div class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a href="./index.html" class="navigation__link navigation__link--active">Студия</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="portfolio.html" class="navigation__link">Портфолио</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="" class="navigation__link">Контакты</a>
+                </li>
+              </ul>
+              
+            
+              </div>
+              
+            
+       <div class="header__contacts">
+          <address class="header-address">
+            <ul class="header-address__list">
+              <li class="header-address__item">
+                <a href="tel:+380961111111" class="header-address__contact">
+                  +38 096 111 11 11</a>
+              </li>
+              <li class="header-address__item">
+                <a href="mailto:info@devstudio.com" class="header-address__mail">
+                  info@devstudio.com</a>
+              </li>
+            </ul>
+        
+        <ul class="modal__links-list">
+          <li class="modal__links-item">
+            <a class="modal__links-link" href="#">Instagram</a>
+            <svg width="1" height="22" class="vertical-icon">
+              <use href="./images/icons/sprite3.svg#icon-Line-1"></use>
+            </svg>
+          </li>
+          <li class="modal__links-item">
+            <a class="modal__links-link" href="#">Twitter</a>
+            <svg width="1" height="22" class="vertical-icon">
+              <use href="./images/icons/sprite3.svg#icon-Line-1"></use>
+            </svg>
+          
+          </li>
+          <li class="modal__links-item">
+            <a class="modal__links-link" href="#">Facebook</a>
+            <svg width="1" height="22" class="vertical-icon">
+              <use href="./images/icons/sprite3.svg#icon-Line-1"></use>
+            </svg>
+          </li>
+          <li class="modal__links-item">
+            <a class="modal__links-link" href="#">LinkedIn</a>
+            <svg width="1" height="22" class="vertical-icon">
+              <use href="./images/icons/sprite3.svg#icon-Line-1"></use>
+            </svg>
+          </li>
+        </ul>
+        
+        </div>
        
-
-       </div>
+     </div>
+   
+   </div>
+  
      
           <!-- <button class="menu-toggle  js-open-menu" aria-expanded="false" type="button" aria-controls="mobile-menu">
             <svg class="icon-menu" width="24px" height="16px">
@@ -183,19 +240,26 @@
               <ul class="work-list">
                 <li>
                   <div class="work-services">
-                   <img class=" work-services__img" src="./images/img1_1.jpg" width="370" height="294" alt="проектируем сайты">
+                    
+                   <img class=" work-services__img"
+                   srcset="./images/img11X.jpg 1x , ./images/img@2x.jpg 2x"
+                    src="./images/img1_1.jpg" width="370" height="294" alt="проектируем сайты">
                    <p class="work-services__text">Десктопные приложения </p></div>
                   </li>
                 
                   <li>
                     <div class="work-services">
-                   <img class="work-services__img" src="./images/img3.jpg" width="370" height="294" alt="сайты для любых девайсов">
+                   <img class="work-services__img" 
+                   srcset="./images/img2X1.jpg , ./images/img@2x2.jpg"
+                   src="./images/img3.jpg" width="370" height="294" alt="сайты для любых девайсов">
                     <p class="work-services__text">Мобильные приложения </p></div>
                   </li>
 
                   <li>
                  <div class="work-services">
-                    <img class="work-services__img" src="./images/img2_1.jpg" width="370" height="294" alt="графическое оформление">
+                    <img class="work-services__img" 
+                    srcset="./images/img3X1.jpg , ./images/img@2x3.jpg"
+                    src="./images/img2_1.jpg" width="370" height="294" alt="графическое оформление">
                     <p class="work-services__text">Дизайнерские решения </p></div>
                   </li>
 
@@ -208,7 +272,14 @@
             <h2 class="staff-title">Наша команда</h2>
              <ul class="staff-title-list">
              <li>
-             <img src="./images/img3_1.jpg" width="270" height="260" alt="Игорь Демьяненко Product Designer">
+           
+              <picture>
+                <source srcset="./images/img1x.jpg 1x , ./images/img2x.jpg 2x" media="(max-width:767px)"/>
+                <source srcset="./images/img1x.jpg 1x , ./images/img2x.jpg 2x" media="(max-width:1199px)" />
+                <source srcset="./images/img1x.jpg 1x , ./images/img2x.jpg 2x" media="(min-width:1200px)" />
+                <img src="./images/img3_1.jpg" width="270" height="260" alt="Игорь Демьяненко Product Designer">
+              </picture>
+        
              <h3 class="staff-list">Игорь Демьяненко</h3> 
              <p class="staff-position">Product Designer</p>
             
@@ -241,7 +312,14 @@
             
             </li>
              <li>
-             <img src="./images/img4_1.jpg" width="270" height="260" alt="Ольга Репина Frontend Developer">
+              <picture>
+                <source srcset="./images/img21x.jpg 1x, ./images/img22x.jpg 2x" media="(max-width:767px)" />
+                <source srcset="./images/img21x.jpg 1x, ./images/img22x.jpg 2x" media="(max-width:1199px)" />
+                <source srcset="./images/img21x.jpg 1x, ./images/img22x.jpg 2x" media="(min-width:1200px)" />
+                <img  src="./images/img4_1.jpg" width="270" height="260" alt="Ольга Репина Frontend Developer">
+              </picture>
+             
+             
              <h3 class="staff-list">Ольга Репина</h3> 
              <p class="staff-position">Frontend Developer</p>
                 <ul class="staff-socials-list">
@@ -272,7 +350,14 @@
                 </ul>
             </li>
              <li>
-            <img src="./images/img5_1.jpg" width="270" height="260" alt="Николай Тарасов Marketing">
+              <picture>
+                <source srcset="./images/img31x.jpg 1x, ./images/img32x.jpg 2x" media="(max-width:767px)" />
+                <source srcset="./images/img31x.jpg 1x, ./images/img32x.jpg 2x" media="(max-width:1199px)" />
+                <source srcset="./images/img31x.jpg 1x, ./images/img32x.jpg 2x" media="(min-width:1200px)" />
+                <img src="./images/img5_1.jpg" width="270" height="260" alt="Николай Тарасов Marketing">
+              </picture>
+           
+          
             <h3 class="staff-list">Николай Тарасов</h3> 
             <p class="staff-position">Marketing</p>
               <ul class="staff-socials-list">
@@ -303,7 +388,14 @@
               </ul>
               </li>
             <li>
-            <img src="./images/img6_1.jpg" width="270" height="260" alt="Михаил Ермаков Designer">
+                <picture>
+                  <source srcset="./images/img41x.jpg 1x, ./images/img42x.jpg 2x" media="(max-width:767px)" />
+                  <source srcset="./images/img41x.jpg 1x, ./images/img42x.jpg 2x" media="(max-width:1199px)" />
+                  <source srcset="./images/img41x.jpg 1x, ./images/img42x.jpg 2x" media="(min-width:1200px)" />
+                  <img  src="./images/img6_1.jpg" width="270" height="260" alt="Михаил Ермаков Designer">
+                </picture>
+          
+            
              <h3 class="staff-list">Михаил Ермаков</h3> 
              <p class="staff-position">UI Designer</p>
   <ul class="staff-socials-list">
