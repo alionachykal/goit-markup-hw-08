@@ -41,24 +41,21 @@
                 </li>
               </ul>
              
-            
-                <button type="button" class="menu-button js-open-menu" 
-                aria-expanded="false"
-                aria-controls="menu-container">
-                  <svg class="page-header__icon" width="40" height="40"
-                   aria-label="Переключатель мобильного меню">
-                    <!-- <use class="icon-menu" href="./images/icons/closeback.svg#icon-closeblack"></use> -->
+            <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+              <svg class="page-header__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
                     <use class="icon-cross" href="./images/icons/sprite4.svg#icon-menu_40px"></use>
-                    </svg>
-                  </svg>
-                </button> 
+              </svg>
+            </button>
 
-                <div class="menu-container js-menu-container " id="menu-container">
-                  <button type="button" class="menu-button-close js-close-menu" data-mobile-menu-close>
-                    <svg class="mobile-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
-                      <use href="./images/icons/closeback.svg#icon-closeblack"></use>
-                    </svg>
-                  </button>
+                <div class="mobile-menu js-menu-container" id="menu-container">
+                  
+                  <button class="menu-toggle-close js-close-menu" aria-expanded="false" aria-controls="mobile-menu">
+
+                  <svg aria-hidden="true" width="18.5px" height="18.5px">
+                 <use class="icon-menu" href="./images/icons/closeback.svg#icon-closeblack"></use>
+                  </svg>
+                    </button>
+                
 
             <div class="navigation">
               <ul class="navigation__list">
@@ -112,9 +109,6 @@
           </li>
           <li class="modal__links-item">
             <a class="modal__links-link" href="#">LinkedIn</a>
-            <svg width="1" height="22" class="vertical-icon">
-              <use href="./images/icons/sprite3.svg#icon-Line-1"></use>
-            </svg>
           </li>
         </ul>
         
