@@ -1,14 +1,14 @@
-.mobile-menu{
-    @media screen and (min-width: 768px) {
-        display: none;
+// .mobile-menu{
+//     @media screen and (min-width: 768px) {
+//         display: none;
        
 
-    }
-}
+//     }
+// }
 
 .mobile-menu.js-menu-container {
 @media screen and (max-width: 769px) {
-    display: block;
+    display: none;
         margin: 0 auto;
         position: fixed;
         overflow-y: scroll;
@@ -24,6 +24,9 @@
     
     }
 
+}
+.mobile-menu.js-menu-container.is-open{
+    display:block
 }
 .page-header__icon{
 padding-top: 10px;
